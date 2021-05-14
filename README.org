@@ -1,21 +1,41 @@
 #+TITLE: Dokumentation Datenquellen
 
 Hier findet sich Dokumentation für öffentliche Datenquellen und Berichte
-zur Evidenzbasierten Bewertung gesundheitlicher Folgen und Ursachen
+zur evidenzbasierten Bewertung gesellschaftlicher Folgen
+(u.a. gesundheitlicher) und Ursachen
 im Zusammenhang mit Corona und Maßnahmen.
 
-Wir freuen uns über Mithilfe per issues:
+* ZIEL Dezentrale Datensammlung
+:LOGBOOK:
+CLOCK: [2021-05-14 Fr 13:59]
+:END:
+# Gregor, [29.04.21 14:17]
+Stand ist:
+- Sammlung von Links, Beschreibungen und Aufbereitungs-Skripte
+- Öffentliche Berichte
+
+Anregungen:
+- [[https://t.me/UnabhaengigeSozialeMedien][Telegram Kanal: Dezentrale Soziale Medien]]
+- [[https://youtu.be/bVxgsA0uEeY][Digital Hero's Journey: the great reset or ....?]]
+- [[https://gkappler.github.io/CausalCovid-19/][Ursache-Wirkungs-Statistik Corona]]
+
+Derzeit
+- wird alles in dieser =README.org= Datei gesammelt.
+- teils Skripte zur Datenübertragung in Tabellenformat (SQL, CSV)
+
+- Bei genügend Material wird bald eine statische Website generiert
+  (github: https://github.com/gkappler/Sterbestatistik, https://github.com/gkappler/CausalCovid-19).
+- Dateneingabemasken sind geplant.
+
+Wir freuen uns über
+** Mithilfe
 - Hinweise auf weitere öffentliche Datenquellen
 - Skripte
   - zum Abfragen von Daten aus APIs
   - zum Einlesen von Datendateien und
   - zum Aufbereiten der Daten in Datenbanken
 
-* ZIEL Dezentrale Datensammlung
-# Gregor, [29.04.21 14:17]
-- [[https://t.me/UnabhaengigeSozialeMedien][Telegram Kanal: Dezentrale Soziale Medien]]
-- [[https://youtu.be/bVxgsA0uEeY][Digital Hero's Journey: the great reset or ....?]]
-- [[https://gkappler.github.io/CausalCovid-19/][Ursache-Wirkungs-Statistik Corona]]
+Am liebsten per GutHub issue.
 
 * Global
 ** [#A] DATA collection of the COVID-19 data maintained by /Our World in Data/
@@ -52,36 +72,42 @@ https://www.who-umc.org/
 Enthält nützliche screenshots zur Bedienung: https://report24.news/impf-nebenwirkungs-datenbank-der-who-3-166-tote-494-463-faelle/
 * Europa
 :PROPERTIES:
-:CLOCK_LAST: [2021-05-14 Fr 11:18]
+:CLOCK_LAST: [2021-05-14 Fr 13:59]
 :END:
 :LOGBOOK:
+CLOCK: [2021-05-14 Fr 13:52]--[2021-05-14 Fr 13:59] =>  0:07
 CLOCK: [2021-05-14 Fr 11:13]--[2021-05-14 Fr 11:18] =>  0:05
 CLOCK: [2021-05-14 Fr 10:51]--[2021-05-14 Fr 11:11] =>  0:20
 :END:
 ** European Medicines Agency
 <<<EMA>>>
-https://www.ema.europa.eu/en/partners-networks/eu-partners/eu-member-states/national-competent-authorities-human
-führt alle nationalen Behörden auf sind, die melden
-(scheint nicht vollständig, z.B. fehlen Schweiz, Großbritannien).
+- https://www.ema.europa.eu/en/partners-networks/eu-partners/eu-member-states/national-competent-authorities-human
+  führt nationale Meldebehörden auf
+  (scheint nicht vollständig, z.B. fehlen Schweiz, Großbritannien).
 # Sophie Maus, [13.05.21 16:40]
 # [Weitergeleitet von Sophie Maus]
 
-** DATA eudravigilance
+** DATA EudraVigilance
 # Gregor, [26.04.21 22:24]
 https://www.ema.europa.eu/en/human-regulatory/research-development/pharmacovigilance/eudravigilance
-
-** http://www.adrreports.eu/vet/de/disclaimer.html
+#+begin_quote
+EudraVigilance is the system for managing and analysing information on suspected adverse reactions to medicines which have been authorised or being studied in clinical trials in the European Economic Area (EEA). The European Medicines Agency (EMA) operates the system on behalf of the European Union (EU) medicines regulatory network.
+#+end_quote
+- [[http://www.adrreports.eu/vet/de/disclaimer.html][Online-Zugriff auf Verdachtsfallmeldungen über Nebenwirkungen]]
 
 ** Belgien
-https://www.afmps.be/fr/usage_humain/medicaments/medicaments/covid_19/vaccins/pharmacovigilance_pour_les_vaccins_contre_la#apercu%20hebdomadaire
+*** DATA afmps
+[[https://www.afmps.be/fr/usage_humain/medicaments/medicaments/covid_19/vaccins/pharmacovigilance_pour_les_vaccins_contre_la#apercu%20hebdomadaire][Online-Zugriff auf Verdachtsfallmeldungen über Nebenwirkungen]]
 ** Deutschland
+:PROPERTIES:
+:ID:       9cabaecc-7ee7-40c8-94ba-bb0fd8bcfe7e
+:END:
 *** Paul Ehrlich Institut
 <<<PEI>>>
-Alle Dokumente habe ich als PDF runter geladen.
+Alle Dokumente als PDF in
 [[file:./reports/Europe/de/PEI/]]
 
-Anfangs noch als wöchentliches Dokument
-Dann alle 14 Tage, dann 21 Tage und nun mittlerweile erst nach 28 Tagen.
+Anfangs 2021 noch als wöchentliches Dokument, dann alle 14 Tage, dann 21 Tage und nun mittlerweile erst nach 28 Tagen.
 Schlechteste Meldequote auch zur EMA...
 
 *** Statistisches Bundesamt (destatis.de)
@@ -97,6 +123,7 @@ https://impfdashboard.de/daten
 ** Niederlande
 :PROPERTIES:
 :CLOCK_LAST: [2021-05-14 Fr 11:13]
+:ID:       2e08a7e7-de4d-4be3-a94a-29e0debd0685
 :END:
 :LOGBOOK:
 CLOCK: [2021-05-14 Fr 11:11]--[2021-05-14 Fr 11:13] =>  0:02
@@ -111,8 +138,11 @@ Die ganz ausführliche Auflistung der Nebenwirkungen habe ich aber nur für den 
 Für das allgemeine Update auch schon für den 24.5.
 
 *** START Crawler
-Es wäre super, wenn man das regelmäßig als Termin setzt und ggf. auslesen kann, falls sowas möglich ist.
+zum regelmäßigen automatisierten auslesen
 ** Frankreich
+:PROPERTIES:
+:ID:       3dee23db-e31f-43c5-9071-88bbbd14c784
+:END:
 ** Österreich
 ** Schweiz
 :PROPERTIES:
@@ -126,8 +156,11 @@ CLOCK: [2021-05-13 Do 13:59]--[2021-05-14 Fr 10:44] => 20:45
 Kein Zugriff auf eine transparente Datenbank?
 
 *** swissmedic
+:PROPERTIES:
+:CLOCK_LAST: [2021-05-14 Fr 13:52]
+:END:
 :LOGBOOK:
-CLOCK: [2021-05-14 Fr 11:18]
+CLOCK: [2021-05-14 Fr 11:18]--[2021-05-14 Fr 13:52] =>  2:34
 :END:
 Es gibt hier einen Bericht, PDF mit 1953 Nebenwirkungen dieses Jahr
 Die Seite:
