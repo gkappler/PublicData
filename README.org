@@ -1,0 +1,192 @@
+#+TITLE: Dokumentation Datenquellen
+
+Hier findet sich Dokumentation für öffentliche Datenquellen und Berichte
+zur Evidenzbasierten Bewertung gesundheitlicher Folgen und Ursachen
+im Zusammenhang mit Corona und Maßnahmen.
+
+Wir freuen uns über Mithilfe per issues:
+- Hinweise auf weitere öffentliche Datenquellen
+- Skripte
+  - zum Abfragen von Daten aus APIs
+  - zum Einlesen von Datendateien und
+  - zum Aufbereiten der Daten in Datenbanken
+
+* ZIEL Dezentrale Datensammlung
+# Gregor, [29.04.21 14:17]
+- [[https://t.me/UnabhaengigeSozialeMedien][Telegram Kanal: Dezentrale Soziale Medien]]
+- [[https://youtu.be/bVxgsA0uEeY][Digital Hero's Journey: the great reset or ....?]]
+- [[https://gkappler.github.io/CausalCovid-19/][Ursache-Wirkungs-Statistik Corona]]
+
+* Global
+** [#A] DATA collection of the COVID-19 data maintained by /Our World in Data/
+https://github.com/owid/covid-19-data/tree/master/public/data
+#+begin_quote
+Our complete COVID-19 dataset is a collection of the COVID-19 data maintained by Our World in Data. It is updated daily and includes data on confirmed cases, deaths, hospitalizations, testing, and vaccinations as well as other variables of potential interest.
+#+end_quote
+*** Confirmed cases and deaths:
+#+begin_quote
+our data comes from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU). We discuss how and when JHU collects and publishes this data here. The cases & deaths dataset is updated daily. Note: the number of cases or deaths reported by any institution—including JHU, the WHO, the ECDC and others—on a given day does not necessarily represent the actual number on that date. This is because of the long reporting chain that exists between a new case/death and its inclusion in statistics. This also means that negative values in cases and deaths can sometimes appear when a country corrects historical data, because it had previously overestimated the number of cases/deaths. Alternatively, large changes can sometimes (although rarely) be made to a country's entire time series if JHU decides (and has access to the necessary data) to correct values retrospectively.
+#+end_quote
+*** Hospitalizations and intensive care unit (ICU) admissions:
+#+begin_quote
+our data comes from the European Centre for Disease Prevention and Control (ECDC) for a select number of European countries; the government of the United Kingdom; the Department of Health & Human Services for the United States; the COVID-19 Tracker for Canada. Unfortunately, we are unable to provide data on hospitalizations for other countries: there is currently no global, aggregated database on COVID-19 hospitalization, and our team at Our World in Data does not have the capacity to build such a dataset.
+#+end_quote
+*** Testing for COVID-19:
+#+begin_quote
+this data is collected by the Our World in Data team from official reports; you can find further details in our post on COVID-19 testing, including our checklist of questions to understand testing data, information on geographical and temporal coverage, and detailed country-by-country source information. The testing dataset is updated around twice a week.
+#+end_quote
+*** Vaccinations against COVID-19:
+#+begin_quote
+this data is collected by the Our World in Data team from official reports.
+#+end_quote
+*** Other variables:
+#+begin_quote
+this data is collected from a variety of sources (United Nations, World Bank, Global Burden of Disease, Blavatnik School of Government, etc.). More information is available in our codebook.
+#+end_quote
+** DATA WHO Datenbank VigiBase 
+# Gregor, [26.04.21 22:25]
+wird vom Uppsala Monitoring Center verwaltet, dem Zentrum zur weltweiten Sammlung von Medikamenten-Nebenwirkungen.
+
+https://www.who-umc.org/
+
+Enthält nützliche screenshots zur Bedienung: https://report24.news/impf-nebenwirkungs-datenbank-der-who-3-166-tote-494-463-faelle/
+* Europa
+:PROPERTIES:
+:CLOCK_LAST: [2021-05-14 Fr 11:18]
+:END:
+:LOGBOOK:
+CLOCK: [2021-05-14 Fr 11:13]--[2021-05-14 Fr 11:18] =>  0:05
+CLOCK: [2021-05-14 Fr 10:51]--[2021-05-14 Fr 11:11] =>  0:20
+:END:
+** European Medicines Agency
+<<<EMA>>>
+https://www.ema.europa.eu/en/partners-networks/eu-partners/eu-member-states/national-competent-authorities-human
+führt alle nationalen Behörden auf sind, die melden
+(scheint nicht vollständig, z.B. fehlen Schweiz, Großbritannien).
+# Sophie Maus, [13.05.21 16:40]
+# [Weitergeleitet von Sophie Maus]
+
+** DATA eudravigilance
+# Gregor, [26.04.21 22:24]
+https://www.ema.europa.eu/en/human-regulatory/research-development/pharmacovigilance/eudravigilance
+
+** http://www.adrreports.eu/vet/de/disclaimer.html
+
+** Belgien
+https://www.afmps.be/fr/usage_humain/medicaments/medicaments/covid_19/vaccins/pharmacovigilance_pour_les_vaccins_contre_la#apercu%20hebdomadaire
+** Deutschland
+*** Paul Ehrlich Institut
+<<<PEI>>>
+Alle Dokumente habe ich als PDF runter geladen.
+[[file:./reports/Europe/de/PEI/]]
+
+Anfangs noch als wöchentliches Dokument
+Dann alle 14 Tage, dann 21 Tage und nun mittlerweile erst nach 28 Tagen.
+Schlechteste Meldequote auch zur EMA...
+
+*** Statistisches Bundesamt (destatis.de)
+**** DATA Sonderauswertung Sterbefälle
+https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Sterbefaelle-Lebenserwartung/Tabellen/sonderauswertung-sterbefaelle.html
+# Gregor, [26.04.21 21:36]
+**** DATA Sterbefallzahlen Bundesländer
+# Gregor, [29.04.21 15:51]
+https://service.destatis.de/DE/bevoelkerung/sterbefallzahlen_bundeslaender.html
+*** DATA Impfdashboard
+# Gregor, [26.04.21 21:37]
+https://impfdashboard.de/daten
+** Niederlande
+:PROPERTIES:
+:CLOCK_LAST: [2021-05-14 Fr 11:13]
+:END:
+:LOGBOOK:
+CLOCK: [2021-05-14 Fr 11:11]--[2021-05-14 Fr 11:13] =>  0:02
+:END:
+https://www.lareb.nl/pages/update-van-bijwerkingen
+https://www.lareb.nl/coronameldingen#/
+
+Daten sind nur aus der Webseite direkt zu ziehen. Erscheinen alle 14 Tage.
+Ab 9.5. beide Seiten als PDF abgespeichert (aus der Drucken Funktion heraus) unter [[file:./reports/Europe/nl/]]
+
+Die ganz ausführliche Auflistung der Nebenwirkungen habe ich aber nur für den 9.5.
+Für das allgemeine Update auch schon für den 24.5.
+
+*** START Crawler
+Es wäre super, wenn man das regelmäßig als Termin setzt und ggf. auslesen kann, falls sowas möglich ist.
+** Frankreich
+** Österreich
+** Schweiz
+:PROPERTIES:
+:CLOCK_LAST: [2021-05-14 Fr 10:44]
+:END:
+:LOGBOOK:
+CLOCK: [2021-05-13 Do 13:59]--[2021-05-14 Fr 10:44] => 20:45
+:END:
+# Sophie Maus, [13.05.21 16:39]
+# [Weitergeleitet von Sophie Maus]
+Kein Zugriff auf eine transparente Datenbank?
+
+*** swissmedic
+:LOGBOOK:
+CLOCK: [2021-05-14 Fr 11:18]
+:END:
+Es gibt hier einen Bericht, PDF mit 1953 Nebenwirkungen dieses Jahr
+Die Seite:
+https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/ueberwachung-nebenwirkungen-covid-19-impfstoffe.html
+Das PDF-Bericht https://twitter.com/Nathaire78/status/1392481836165746688?s=20
+
+- 4. Mai 2021: https://www.swissmedic.ch/dam/swissmedic/de/dokumente/marktueberwachung/uaw/swissmedic-covid-19-pharmacovigilancereport20210504.pdf.download.pdf/Swissmedic-Covid-19-PharmacovigilanceReport20210504.pdf
+
+- 30.12.20: https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/kein-zusammenhang-mit-covid-19-impfung.html
+
+- 26.2.21: https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/nebenwirkungen-covid-19-impfungen-ch-update.html
+
+- 11.3.21: https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/nebenwirkungen-covid-19-impfungen-ch.html
+
+- 26.3.21: https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/nebenwirkungen-covid-19-impfungen-update.html
+
+- 9.4.21: https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/nebenwirkungen-covid-19-impfungen-update-3.html
+
+- 22.4.21: https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/nebenwirkungen-covid-19-impfungen-update-4.html
+
+- 7.5.21: https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/nebenwirkungen-covid-19-impfungen-update-5.html
+
+
+**** Vaccinovigilance
+Nichts Aktuelleres als 2019, aber das PDF zeigt, dass es nur 237 Berichte für das ganze Jahr gab... ein aussagekräftiger Vergleich.
+https://www.swissmedic.ch/swissmedic/de/home/humanarzneimittel/marktueberwachung/pharmacovigilance/vaccinovigilance.html
+
+#+begin_quote
+Enfin, en qualité de membre actif du Program for International Drug Monitoring, Swissmedic transmet toutes les déclarations au Centre international de pharmacovigilance de l’Organisation mondiale de la Santé (OMS).
+#+end_quote
+
+*** DATA BAG
+https://www.covid19.admin.ch/api
+z.B. Abfrage download https://www.covid19.admin.ch/api/data/20210510-cfeld8mz/downloads/sources-csv.zip
+*** Impfnebenwirkungen
+https://www.swissmedic.ch/swissmedic/de/home/news/coronavirus-covid-19/nebenwirkungen-covid-19-impfungen-update-5.html
+
+* Amerika
+** USA
+*** DATA USA VAERS Datenbank 
+# Gregor, [26.04.21 22:32]
+
+https://vaers.hhs.gov/reportevent.html
+
+https://childrenshealthdefense.org/defender/vaers-reports-clotting-disorders-all-three-emergency-use-authorization-vaccines/
+
+Es scheint erheblichen Meldeverzug zu geben:
+https://lbry.tv/@TimTruth:b/Vaersmissingbacklog-1:1
+
+https://www.openvaers.com/
+* Afrika
+* Asia
+** India
+*** DATA https://www.covid19india.org/
+https://api.covid19india.org/
+
+Files available
+
+    Aggregated sheets provide aggregated data at the district/state levels in csv format.
+    V4 json endpoints. These are the json apis that are used by the website to show all the statistics on the site. These can be used by developers and analysts who have knowledge of json parsing (recommended approach). All our v4 endpoints are actively developed and in use since this serves the frontend view Documentation for the same.
+    Latest data from the google sheet (10-20 minutes delayed) is available through the latest end-point. These are present under the raw files section below. (Not recommended since the number of files is huge and there is no additional information present in these as compared to the above mentioned endpoints.)
+* Ozeanien
